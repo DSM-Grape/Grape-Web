@@ -5,7 +5,7 @@ const Group = ({ info, groupname, paths }) => {
     <div className="project-sidebar-group">
       <p>{groupname}</p>
       <ul>
-        {paths.map((val, index) => { return (info.resource.get(val).group === groupname) ? (<a href="key">val</a>) : '' })}
+        {paths.map((val, index) => { return (info.resource[val].group === groupname) ? (<li key={index}><a key={index} href={val.replace(/\//, "#")}>{val}</a></li>) : '' })}
       </ul>
     </div>
   )
@@ -17,11 +17,10 @@ class ProjectSidebar extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div id="project-sidebar-wrap">
         <div id="project-sidebar-group-list">
-          {this.props.groups.map((val, index) => { return <Group info={this.props.info} groupname={val} paths={this.props.paths} /> })}
+          {this.props.groups.map((val, index) => { return <Group key={index} info={this.props.info} groupname={val} paths={this.props.paths} /> })}
         </div>
       </div>
     );
