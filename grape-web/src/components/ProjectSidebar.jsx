@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Render Group & Group Paths
 const Group = ({ info, groupname, paths }) => {
   return (
     <div className="project-sidebar-group">

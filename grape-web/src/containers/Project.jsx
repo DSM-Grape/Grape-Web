@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProjectDocument, ProjectSidebar } from '../components/Index';
+import { ProjectDocument, ProjectSidebar, ProjectMenu } from '../components/Index';
 
 import '../css/Project.css';
 
@@ -28,6 +28,7 @@ class Project extends Component {
       <div id="project-wrap">
         <ProjectSidebar info={this.state.info} groups={this.state.groups} paths={this.state.paths} />
         <ProjectDocument info={this.state.info} loadDocument={this.loadDocument} />
+        <ProjectMenu />
       </div>
     );
   }
