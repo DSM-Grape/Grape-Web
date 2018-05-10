@@ -26,9 +26,9 @@ class Project extends Component {
   render() {
     return (
       <div id="project-wrap">
+        <ProjectMenu />
         <ProjectSidebar info={this.state.info} groups={this.state.groups} paths={this.state.paths} />
         <ProjectDocument info={this.state.info} loadDocument={this.loadDocument} />
-        <ProjectMenu />
       </div>
     );
   }

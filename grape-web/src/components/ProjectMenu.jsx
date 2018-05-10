@@ -11,25 +11,30 @@ class ProjectMenu extends Component {
       width: 0,
       pleft: 0,
       pright: 0,
+      expand: false,
+      overlay: 'hide',
     }
   }
 
   onBtnClick() {
-    this.setState({ width: 'auto', pleft: 10 + 'px', pright: 70 + 'px' });
+    this.state.expand === false ? this.setState({ width: 1000 + 'px', pleft: 10 + 'px', pright: 55 + 'px', expand: true, overlay: 'show' }) : this.setState({ width: 0, pleft: 0, pright: 0, expand: false, overlay: 'hide' });
   }
 
   render() {
     return (
       <div id="project-menu-wrap">
-        <div id="project-menu-btn" onClick={this.onBtnClick}><img id="project-menu-img" alt="menu icon" src={ico} /></div>
-        <div id="project-menu-list-wrap" style={{ width: this.state.width, paddingLeft: this.state.pleft, paddingRight: this.state.pright }}>
-          <ul>
-            <li className="project-menu-item">ADD API</li>
-            <li className="project-menu-item">ADD DOC</li>
-            <li className="project-menu-item">PULL REQUEST</li>
-            <li className="project-menu-item">EDIT</li>
-            <li className="project-menu-item">MANAGE PROJECT</li>
-          </ul>
+        <div id="project-overlay" onClick={this.onBtnClick} class={this.state.overlay}></div>
+        <div id="project-menu-contents">
+          <div id="project-menu-btn" onClick={this.onBtnClick}><img id="project-menu-img" alt="menu icon" src={ico} /></div>
+          <div id="project-menu-list-wrap" style={{ maxWidth: this.state.width, paddingLeft: this.state.pleft, paddingRight: this.state.pright }}>
+            <div id="project-menu-item-wrap">
+              <span className="project-menu-item">ADD API</span>
+              <span className="project-menu-item">ADD DOC</span>
+              <span className="project-menu-item">PULL REQUEST</span>
+              <span className="project-menu-item">EDIT</span>
+              <span className="project-menu-item">MANAGE PROJECT</span>
+            </div>
+          </div>
         </div>
       </div>
     )
