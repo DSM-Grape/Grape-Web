@@ -11,25 +11,30 @@ body {
 }
 
 #project-wrap {
+
 }
 
-#project-wrap #project-sidebar-wrap {
+#project-wrap #project-contents {
+  
+}
+
+#project-wrap #project-contents #project-sidebar-wrap {
   width: 250px;
   height: 100vh;
   float: left;
   background-color:#232323;
 }
 
-#project-wrap #project-sidebar-wrap .project-sidebar-group .project-sidebar-groupname {
+#project-wrap #project-contents #project-sidebar-wrap .project-sidebar-group .project-sidebar-groupname {
   margin: 0;
   font-weight: 700;
 }
 
-#project-wrap #project-sidebar-wrap .project-sidebar-group .project-sidebar-pathname {
+#project-wrap #project-contents #project-sidebar-wrap .project-sidebar-group .project-sidebar-pathname {
   margin-left: 10px;
 }
 
-#project-wrap #project-document-wrap {
+#project-wrap #project-contents #project-document-wrap {
   width: calc(100% - 250px);
   height: 100vh;
   float: left;

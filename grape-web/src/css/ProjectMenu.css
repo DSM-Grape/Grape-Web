@@ -13,21 +13,22 @@ li {
   opacity: 1;
 }
 
-#project-wrap #project-overlay {
+#project-wrap #project-menu-wrap #project-overlay {
   position: fixed;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out, z-index 0s;
   width: 100vw;
   height: 100vh;
   background: #23232377;
 }
 
-#project-wrap #project-menu-contents {
+#project-wrap #project-menu-wrap #project-menu-contents {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
 }
 
-#project-wrap #project-menu-contents #project-menu-btn {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-btn {
+  z-index: 9999;
   width: 50px;
   height: 50px;
   background: #232323;
@@ -37,11 +38,11 @@ li {
   transition: 0.5s;
 }
 
-#project-wrap #project-menu-contents #project-menu-btn:hover  {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-btn:hover {
   animation: ico-spin infinite 5s linear;
 }
 
-#project-wrap #project-menu-contents #project-menu-btn #project-menu-img {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-btn #project-menu-img {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -51,7 +52,7 @@ li {
   transform: translate(-50%, -50%);
 }
 
-#project-wrap #project-menu-contents #project-menu-list-wrap {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-list-wrap {
   z-index: -1;
   /* width: 0;
   padding: 0; */
@@ -69,11 +70,11 @@ li {
   bottom: 1.5rem;
 }
 
-#project-wrap #project-menu-contents #project-menu-list-wrap #project-menu-item-wrap {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-list-wrap #project-menu-item-wrap {
   min-width: 575px;
 }
 
-#project-wrap #project-menu-contents #project-menu-list-wrap .project-menu-item {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-list-wrap .project-menu-item {
   transition: 0.5s;
   float: left;
   margin-left: 1rem;
@@ -81,12 +82,12 @@ li {
   color: rgb(170, 170, 170);
 }
 
-#project-wrap #project-menu-contents #project-menu-list-wrap .project-menu-item:hover {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-list-wrap .project-menu-item:hover {
   color: black;
   text-shadow: 0px 0px 2.5px #d8d8d8;
 }
 
-#project-wrap #project-menu-contents #project-menu-list-wrap .project-menu-item:not(:last-child):after {
+#project-wrap #project-menu-wrap #project-menu-contents #project-menu-list-wrap .project-menu-item:not(:last-child):after {
   content: "";
   margin-left: 1rem;
   border-right: 1px solid rgb(235, 235, 235);

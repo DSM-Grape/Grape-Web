@@ -8,22 +8,30 @@ class ProjectMenu extends Component {
     super();
     this.onBtnClick = this.onBtnClick.bind(this);
     this.state = {
-      width: 0,
+      width: '0px',
       pleft: 0,
       pright: 0,
       expand: false,
       overlay: 'hide',
+      zIndex: -1,
+      flag: 0
     }
   }
 
+  componentDidUpdate() {
+    setTimeout(() => {
+      if (this.state.flag === 0) { this.setState({ zIndex: -1, flag: this.state.flag + 1 }); }
+    }, 500);
+  }
+
   onBtnClick() {
-    this.state.expand === false ? this.setState({ width: 1000 + 'px', pleft: 10 + 'px', pright: 55 + 'px', expand: true, overlay: 'show' }) : this.setState({ width: 0, pleft: 0, pright: 0, expand: false, overlay: 'hide' });
+    this.state.expand === false ? this.setState({ width: 1000 + 'px', pleft: 10 + 'px', pright: 55 + 'px', expand: true, overlay: 'show', zIndex: 0, flag: 2 }) : this.setState({ width: 0, pleft: 0, pright: 0, expand: false, overlay: 'hide', flag: 0 });
   }
 
   render() {
     return (
       <div id="project-menu-wrap">
-        <div id="project-overlay" onClick={this.onBtnClick} class={this.state.overlay}></div>
+        <div id="project-overlay" style={{ zIndex: this.state.zIndex }} onClick={this.state.expand === true ? this.onBtnClick : null} className={this.state.overlay} ></div>
         <div id="project-menu-contents">
           <div id="project-menu-btn" onClick={this.onBtnClick}><img id="project-menu-img" alt="menu icon" src={ico} /></div>
           <div id="project-menu-list-wrap" style={{ maxWidth: this.state.width, paddingLeft: this.state.pleft, paddingRight: this.state.pright }}>
