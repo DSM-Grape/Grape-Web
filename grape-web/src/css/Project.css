@@ -36,6 +36,7 @@ body {
 
 #project-wrap #project-contents #project-document-wrap {
   width: calc(100% - 250px);
+  background-color: white;
   height: 100vh;
   float: left;
 }

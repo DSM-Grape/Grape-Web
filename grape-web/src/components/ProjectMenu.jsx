@@ -20,8 +20,8 @@ class ProjectMenu extends Component {
 
   componentDidUpdate() {
     setTimeout(() => {
-      if (this.state.flag === 0) { this.setState({ zIndex: -1, flag: this.state.flag + 1 }); }
-    }, 500);
+      if (this.state.flag === 0) { this.setState({ zIndex: -1, flag: 1 }); }
+    }, 1000);
   }
 
   onBtnClick() {
