@@ -1,0 +1,14 @@
+.document-api {
+  background-color: black;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+
+.document-api #api-method {
+  width: 300%;
+  align-content: center;
+}
+
+.document-api #api-base-url {}
+
+.document-api #api-target-url {}

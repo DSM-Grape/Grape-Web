@@ -20,6 +20,9 @@ class ProjectSidebar extends Component {
   render() {
     return (
       <div id="project-sidebar-wrap">
+        <div id="project-sidebar-search" className="input">
+          <input placeholder="Search"/>
+        </div>
         <div id="project-sidebar-group-list">
           {this.props.groups.map((val, index) => { return <Group key={index} info={this.props.info} groupname={val} paths={this.props.paths} /> })}
         </div>

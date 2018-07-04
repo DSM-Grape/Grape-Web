@@ -7,7 +7,9 @@ class ProjectMenu extends Component {
   constructor(props) {
     super();
     this.onBtnClick = this.onBtnClick.bind(this);
+    this.onFileChange = this.onFileChange.bind(this);
     this.state = {
+      document: "",
       width: '0px',
       pleft: 0,
       pright: 0,
@@ -22,6 +24,10 @@ class ProjectMenu extends Component {
     setTimeout(() => {
       if (this.state.flag === 0) { this.setState({ zIndex: -1, flag: 1 }); }
     }, 1000);
+  }
+
+  onFileChange(e) {
+    this.setState({ document: e.target.files[0] });
   }
 
   onBtnClick() {

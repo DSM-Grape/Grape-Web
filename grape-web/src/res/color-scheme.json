@@ -1,90 +1,92 @@
 {
-  "get": {
-    "pcl": "#FFFAFA",
-    "pcg": "#8D7373",
-    "pcd": "#7C2525",
-    "pct": "#480C0C",
-    "abg": "#FFFCFC",
-    "hbg": "#F7EDED",
-    "thd": "#F4EBEB",
-    "tbg": "#FBF7F7",
-    "sbg": "#F8F2F2"
-  },
-  "post": {
-    "pcl": "#FFFDFA",
-    "pcg": "#8D7F73",
-    "pcd": "#7C5825",
-    "pct": "#48240C",
-    "abg": "#FFFDFC",
-    "hbg": "#F7F2ED",
-    "thd": "#F4F1EB",
-    "tbg": "#FBF9F7",
-    "sbg": "#F8F5F2"
-  },
-  "head": {
-    "pcl": "#FFFFFA",
-    "pcg": "#8D8D73",
-    "pcd": "#7C6F25",
-    "pct": "#48320C",
-    "abg": "#FFFFFC",
-    "hbg": "#F7F6ED",
-    "thd": "#F4F3EB",
-    "tbg": "#FBFAF7",
-    "sbg": "#F8F8F2"
-  },
-  "options": {
-    "pcl": "#FDFFFA",
-    "pcg": "#808D73",
-    "pcd": "#5D7C25",
-    "pct": "#37480C",
-    "abg": "#FDFFFC",
-    "hbg": "#F3F7ED",
-    "thd": "#F1F4EB",
-    "tbg": "#FAFBF7",
-    "sbg": "#F4F8F2"
-  },
-  "put": {
-    "pcl": "#FBFFFA",
-    "pcg": "#738D7A",
-    "pcd": "#2D7C25",
-    "pct": "#0B3E09",
-    "abg": "#FCFFFC",
-    "hbg": "#EEF7ED",
-    "thd": "#EBF4EC",
-    "tbg": "#F7FBF7",
-    "sbg": "#F2F8F4"
-  },
-  "delete": {
-    "pcl": "#FAFFFE",
-    "pcg": "#73898D",
-    "pcd": "#25747C",
-    "pct": "#0C4648",
-    "abg": "#FCFFFF",
-    "hbg": "#EDF7F7",
-    "thd": "#EBF4F4",
-    "tbg": "#F7FBFB",
-    "sbg": "#F2F8F8"
-  },
-  "trace": {
-    "pcl": "#FAFDFF",
-    "pcg": "#737F8D",
-    "pcd": "#25477C",
-    "pct": "#25477C",
-    "abg": "#150C48",
-    "hbg": "#EDF1F7",
-    "thd": "#EBEDF4",
-    "tbg": "#F7F8FB",
-    "sbg": "#F2F4F8"
-  },
-  "connect": {
-    "pcl": "#FAFAFF",
-    "pcg": "#81738D",
-    "pcd": "#3C257C",
-    "pct": "#2D0C48",
-    "abg": "#FEFCFF",
-    "hbg": "#F2EDF7",
-    "thd": "#F0EBF4",
-    "tbg": "#F9F7FB",
-    "sbg": "#F5F2F8"
+  "scheme": {
+    "get": {
+      "pcl": "#FFFAFA",
+      "pcg": "#8D7373",
+      "pcd": "#7C2525",
+      "pct": "#480C0C",
+      "abg": "#FFFCFC",
+      "hbg": "#F7EDED",
+      "thd": "#F4EBEB",
+      "tbg": "#FBF7F7",
+      "sbg": "#F8F2F2"
+    },
+    "post": {
+      "pcl": "#FFFDFA",
+      "pcg": "#8D7F73",
+      "pcd": "#7C5825",
+      "pct": "#48240C",
+      "abg": "#FFFDFC",
+      "hbg": "#F7F2ED",
+      "thd": "#F4F1EB",
+      "tbg": "#FBF9F7",
+      "sbg": "#F8F5F2"
+    },
+    "head": {
+      "pcl": "#FFFFFA",
+      "pcg": "#8D8D73",
+      "pcd": "#7C6F25",
+      "pct": "#48320C",
+      "abg": "#FFFFFC",
+      "hbg": "#F7F6ED",
+      "thd": "#F4F3EB",
+      "tbg": "#FBFAF7",
+      "sbg": "#F8F8F2"
+    },
+    "options": {
+      "pcl": "#FDFFFA",
+      "pcg": "#808D73",
+      "pcd": "#5D7C25",
+      "pct": "#37480C",
+      "abg": "#FDFFFC",
+      "hbg": "#F3F7ED",
+      "thd": "#F1F4EB",
+      "tbg": "#FAFBF7",
+      "sbg": "#F4F8F2"
+    },
+    "put": {
+      "pcl": "#FBFFFA",
+      "pcg": "#738D7A",
+      "pcd": "#2D7C25",
+      "pct": "#0B3E09",
+      "abg": "#FCFFFC",
+      "hbg": "#EEF7ED",
+      "thd": "#EBF4EC",
+      "tbg": "#F7FBF7",
+      "sbg": "#F2F8F4"
+    },
+    "delete": {
+      "pcl": "#FAFFFE",
+      "pcg": "#73898D",
+      "pcd": "#25747C",
+      "pct": "#0C4648",
+      "abg": "#FCFFFF",
+      "hbg": "#EDF7F7",
+      "thd": "#EBF4F4",
+      "tbg": "#F7FBFB",
+      "sbg": "#F2F8F8"
+    },
+    "trace": {
+      "pcl": "#FAFDFF",
+      "pcg": "#737F8D",
+      "pcd": "#25477C",
+      "pct": "#25477C",
+      "abg": "#150C48",
+      "hbg": "#EDF1F7",
+      "thd": "#EBEDF4",
+      "tbg": "#F7F8FB",
+      "sbg": "#F2F4F8"
+    },
+    "connect": {
+      "pcl": "#FAFAFF",
+      "pcg": "#81738D",
+      "pcd": "#3C257C",
+      "pct": "#2D0C48",
+      "abg": "#FEFCFF",
+      "hbg": "#F2EDF7",
+      "thd": "#F0EBF4",
+      "tbg": "#F9F7FB",
+      "sbg": "#F5F2F8"
+    }
   }
 }
